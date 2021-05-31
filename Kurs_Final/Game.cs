@@ -25,6 +25,20 @@ namespace Kurs_Final
             map.GenTiles(this);
             map.GenNewTile(this);
             map.GenNewTile(this);
+            map.GenNewTile(this);
+            map.GenNewTile(this);
+            map.GenNewTile(this);
+            map.GenNewTile(this);
+            map.GenNewTile(this);
+            map.GenNewTile(this);
+            map.GenNewTile(this);
+            map.GenNewTile(this); 
+            map.GenNewTile(this);
+            map.GenNewTile(this);
+            map.GenNewTile(this);
+            map.GenNewTile(this);
+            map.GenNewTile(this);
+            map.GenNewTile(this);
         }
 
         private void KeyBoardEvent_(object sender, KeyEventArgs e)

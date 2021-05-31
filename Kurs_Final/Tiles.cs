@@ -16,6 +16,11 @@ namespace Kurs_Final
         
         public Tiles(Form game, Point location)
         {
+            tile.BackColor = Color.Gray;
+            tile.Size = new Size(70, 70);
+            tile.Location = location;
+            game.Controls.Remove(tile);
+            tile.BringToFront();
             tile = new PictureBox();
             tile.BackColor = Color.Gray;
             tile.Size = new Size(70, 70);
@@ -23,6 +28,7 @@ namespace Kurs_Final
             game.Controls.Add(tile);
             tile.BringToFront();
         }
+       
     }
 
 }
