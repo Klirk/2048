@@ -15,7 +15,7 @@ namespace Kurs_Final
         public TileEmpty(Form _game, Point _location) : base(_game, _location)
         {
         }
-        public override int Value { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override int Value { get; set; }
     }
 }
 

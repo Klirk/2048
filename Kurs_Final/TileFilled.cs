@@ -20,13 +20,14 @@ namespace Kurs_Final
             {
                 AutoSize = false,
                 TextAlign = ContentAlignment.MiddleCenter,
-                Text = "",
+                Text = "2",
                 ForeColor = Color.Black,
                 Font = new Font("Times New Romans", 15),
                 Size = new Size(70, 70)
             };
             tile.Controls.Add(numbers);
-            
+            Value = _value;
+
         }
         public override int Value
         {

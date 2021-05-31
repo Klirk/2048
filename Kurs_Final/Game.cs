@@ -21,16 +21,16 @@ namespace Kurs_Final
         Map map;
         private void Game_Load(object sender, EventArgs e)
         {
-            //this.KeyDown += new KeyEventHandler(KeyBoardEvent_);
+            this.KeyDown += new KeyEventHandler(KeyBoardEvent_);
             map.GenTiles(this);
-            //map.GenNewTile(this);
-            //map.GenNewTile();
+            map.GenNewTile(this);
+            map.GenNewTile(this);
         }
 
-        //private void KeyBoardEvent_(object sender, KeyEventArgs e)
-        //{
-        //    map.Move(e);
-        //}
+        private void KeyBoardEvent_(object sender, KeyEventArgs e)
+        {
+            map.Move(e);
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
