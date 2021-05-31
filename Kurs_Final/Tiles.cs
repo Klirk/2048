@@ -14,12 +14,11 @@ namespace Kurs_Final
     {
         public Label numbers = new Label();
         public PictureBox tile = new PictureBox();
-        public Color color { get; set; }
+        public int value = 0;
         public Point location { get; set; }
         public abstract int Value { get; set; }
-        public Tiles(Color _color, Point _location)
+        public Tiles( Point _location)
         {
-            color = _color;
             location = _location;
         }
      

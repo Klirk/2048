@@ -12,8 +12,7 @@ namespace Kurs_Final
 {
     class TileEmpty : Tiles
     {
-        private int value = 0;
-        public TileEmpty(Color _color, Point _location, Form _game) : base(_color, _location)
+        public TileEmpty(int _value, Point _location, Form _game) : base( _location)
         {
             numbers = new Label()
             {
@@ -26,12 +25,12 @@ namespace Kurs_Final
             };
             tile = new PictureBox();
             tile.Controls.Add(numbers);
-            tile.BackColor = color;
+            tile.BackColor = Color.Gray;
             tile.Size = new Size(70, 70);
             tile.Location = location;
             _game.Controls.Add(tile);
             tile.BringToFront();
-            Value = value;
+            value = _value;
         }
         public override int Value
         {
