@@ -13,19 +13,16 @@ namespace Kurs_Final
     abstract class Tiles
     {
         public PictureBox tile = new PictureBox();
-        private Point location { get; set; }
         
-        public Tiles(Form game, Point _location)
+        public Tiles(Form game, Point location)
         {
-            location = _location;
             tile = new PictureBox();
             tile.BackColor = Color.Gray;
             tile.Size = new Size(70, 70);
-            tile.Location = _location;
+            tile.Location = location;
             game.Controls.Add(tile);
             tile.BringToFront();
         }
-        public abstract int Value { get; set; }
     }
 
 }

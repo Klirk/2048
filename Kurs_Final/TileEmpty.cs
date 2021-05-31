@@ -12,10 +12,10 @@ namespace Kurs_Final
 {
     class TileEmpty : Tiles
     {
-        public TileEmpty(Form _game, Point _location) : base(_game, _location)
+        public TileEmpty(Form game, Point location) : base(game, location)
         {
         }
-        public override int Value { get; set; }
+       
     }
 }
 
