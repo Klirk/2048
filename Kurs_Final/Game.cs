@@ -23,7 +23,7 @@ namespace Kurs_Final
         {
             //this.KeyDown += new KeyEventHandler(KeyBoardEvent_);
             map.GenTiles(this);
-            //map.GenNewTile();
+            //map.GenNewTile(this);
             //map.GenNewTile();
         }
 

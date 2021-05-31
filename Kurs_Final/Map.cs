@@ -64,13 +64,13 @@ namespace Kurs_Final
             {
                 Point point = new Point(15 + 80 * a, 80 + 80 * b);
                 TileFilled tile_2 = new TileFilled(form, point, 2);
-                tile[a, b].Value = tile_2.GetValue();
+                tile[a, b].Value = 2;
             }
             else
             {
                 Point point = new Point(15 + 80 * a, 80 + 80 * b);
                 TileFilled tile_4 = new TileFilled(form, point, 4);
-                tile[a, b].Value = tile_4.GetValue();
+                tile[a, b].Value = 4;
             }
         }
         //    public void Move(KeyEventArgs e)

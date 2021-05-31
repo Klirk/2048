@@ -13,7 +13,7 @@ namespace Kurs_Final
     class TileFilled : Tiles
     {
         private Label numbers = new Label();
-        private int value { get; set; }
+        private int value = 2;
         public TileFilled(Form game, Point _location, int _value) : base(game, _location)
         {
             numbers = new Label()
@@ -26,7 +26,6 @@ namespace Kurs_Final
                 Size = new Size(70, 70)
             };
             tile.Controls.Add(numbers);
-            value = _value;
             
         }
         public override int Value
@@ -80,5 +79,4 @@ namespace Kurs_Final
         }
     }
 
-}
 }
