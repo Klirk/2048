@@ -12,17 +12,20 @@ namespace Kurs_Final
 {
     abstract class Tiles
     {
-        public Label numbers = new Label();
         public PictureBox tile = new PictureBox();
-        public int value = 0;
-        public Point location { get; set; }
-        public abstract int Value { get; set; }
-        public Tiles( Point _location)
+        private Point location { get; set; }
+        
+        public Tiles(Form game, Point _location)
         {
             location = _location;
+            tile = new PictureBox();
+            tile.BackColor = Color.Gray;
+            tile.Size = new Size(70, 70);
+            tile.Location = _location;
+            game.Controls.Add(tile);
+            tile.BringToFront();
         }
-     
-       
+        public abstract int Value { get; set; }
     }
 
 }

@@ -12,9 +12,22 @@ namespace Kurs_Final
 {
     class TileFilled : Tiles
     {
-        public TileFilled(int _value, Point _location, Form _game) : base( _location)
+        private Label numbers = new Label();
+        private int value { get; set; }
+        public TileFilled(Form game, Point _location, int _value) : base(game, _location)
         {
+            numbers = new Label()
+            {
+                AutoSize = false,
+                TextAlign = ContentAlignment.MiddleCenter,
+                Text = "",
+                ForeColor = Color.Black,
+                Font = new Font("Times New Romans", 15),
+                Size = new Size(70, 70)
+            };
+            tile.Controls.Add(numbers);
             value = _value;
+            
         }
         public override int Value
         {
@@ -66,4 +79,6 @@ namespace Kurs_Final
             }
         }
     }
+
+}
 }

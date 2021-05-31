@@ -12,52 +12,10 @@ namespace Kurs_Final
 {
     class TileEmpty : Tiles
     {
-        public TileEmpty(int _value, Point _location, Form _game) : base( _location)
+        public TileEmpty(Form _game, Point _location) : base(_game, _location)
         {
-            numbers = new Label()
-            {
-                AutoSize = false,
-                TextAlign = ContentAlignment.MiddleCenter,
-                Text = "",
-                ForeColor = Color.Black,
-                Font = new Font("Times New Romans", 15),
-                Size = new Size(70, 70)
-            };
-            tile = new PictureBox();
-            tile.Controls.Add(numbers);
-            tile.BackColor = Color.Gray;
-            tile.Size = new Size(70, 70);
-            tile.Location = location;
-            _game.Controls.Add(tile);
-            tile.BringToFront();
-            value = _value;
         }
-        public override int Value
-        {
-
-            get
-            {
-                return value;
-            }
-            set
-            {
-                numbers.Text = value.ToString();
-                this.value = value;
-                switch (value)
-                {
-                    case 0:
-                        tile.BackColor = Color.Gray;
-                        numbers.Text = "";
-                        break;
-
-                }
-            }
-        }
+        public override int Value { get => throw new NotImplementedException(); set => throw new NotImplementedException(); };
     }
-
-
-
-
-
 }
 
