@@ -29,7 +29,7 @@ namespace Kurs_Final
 
         private void KeyBoardEvent_(object sender, KeyEventArgs e)
         {
-            map.Move(e);
+            map.Move(e, this);
         }
 
         private void label1_Click(object sender, EventArgs e)
