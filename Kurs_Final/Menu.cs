@@ -32,5 +32,6 @@ namespace Kurs_Final
         {
             Close();
         }
+
     }
 }
